@@ -20,7 +20,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
                     }
                 }
             }
@@ -35,8 +36,8 @@
 
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero ">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="p-4 my-20 ">
+            <div class="flex justify-between flex-col lg:flex-row">
 
                 <div>
                     <h1 class="text-7xl font-extrabold">
@@ -46,10 +47,11 @@
                     </h1>
                     <p class="py-6 text-lg">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste
                         Buds.</p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore More <i
+                            class="fa-solid fa-arrow-trend-up"></i></button>
                 </div>
                 <div>
-                    <img src="./images/banner.png" class="max-w-sm " />
+                    <img src="./images/banner.png" class=" " />
                     <!-- ratting badge -->
                     <div class="flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60 rounded-lg -mt-16">
                         <i class="fa-solid fa-star text-4xl text-amber-400"></i>
@@ -139,7 +141,7 @@
         </section>
         <!-- super client section -->
         <section
-            class="my-24 rounded-xl px-16 py-24 bg-gradient-to-r from-[#FF8938] to-[#F00] flex flex-col lg:flex-row gap-12 ">
+            class="my-24 rounded-xl px-16 py-24 bg-gradient-to-r from-gradient-start to-gradient-end flex flex-col lg:flex-row gap-12 ">
             <div class=" flex items-center lg:pr-28">
                 <div class="space-y-5">
                     <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br>Clients</h2>
@@ -148,7 +150,7 @@
                         majority have suffered alteration in some form, by injected humour, or randomised words which
                         don't
                         look even slightly believable. </p>
-                    <button class="btn btn-primary">Show All</button>
+                    <button class="btn bg-white text-[#FF8938]">Show All</button>
                 </div>
             </div>
             <!-- review container -->
@@ -227,8 +229,55 @@
             </div>
         </section>
     </main>
-    <footer>
+    <!-- footer -->
+    <footer class="lg:px-52 py-10 bg-gradient-to-r from-[#FF00001A] to-[#FF89381A] text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="./images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Get Started</button>
+            </p>
+        </div>
+        <div class="footer ">
 
+            <div>
+                <h6 class="footer-title">Quick Links</h6>
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Insurance</a>
+                <a class="link link-hover">Privacy Policy</a>
+            </div>
+            <div>
+                <h6 class="footer-title">Our Service</h6>
+                <a class="link link-hover">Life Insurance</a>
+                <a class="link link-hover">Car Insurance</a>
+                <a class="link link-hover">Health Insurance</a>
+                <a class="link link-hover">House Insurance</a>
+            </div>
+            <div>
+                <h6 class="footer-title">Help</h6>
+                <a class="link link-hover">FAQs</a>
+                <a class="link link-hover">Contact Us</a>
+            </div>
+            <div>
+                <h6 class="footer-title">Subscribe to our <br> newsletter</h6>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="join">
+                        <input type="text" placeholder="username@site.com"
+                            class="py-4 bg-transparent border-b-2 border-black outline-none" />
+                        <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end rounded-full"><i
+                                class="fa-solid fa-chevron-right text-white"></i></button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="mt-4 text-center">
+            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        </div>
     </footer>
 
 </body>
